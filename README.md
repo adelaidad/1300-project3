@@ -1,1 +1,3 @@
-# 1300-project3
+# Project 3
+
+**Submission Instructions:** Stage, commit, and push your changed files. Then complete the submission form.

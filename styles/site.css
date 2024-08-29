@@ -1,0 +1,416 @@
+body{
+    background-color: #f8efdf;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu:hover{
+    background-color: #fb8b24;
+}
+.menu{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 15px;
+    color: #5f0f40;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+.x{
+    font-size: 40px;
+    background-color: #5f0f40;
+    font-family:monospace;
+    color: #cec0a7;
+    padding: 8px 8px 8px 8px;
+    border: none;
+    margin-left:20px;
+    cursor:pointer;
+}
+.x:hover{
+    color:white;
+}
+
+h1{
+    display: none;
+    font-family: Georgia, serif;
+}
+
+h2{
+    color:#9a031e;
+    font-size: 28px;
+    font-family:Georgia, serif;
+}
+.stacked{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    border: 4px #e4d1ae;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 10px;
+}
+
+h3{
+    font-family:Georgia, serif;
+    text-decoration: underline;
+    font-size:20px
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #cec0a7;;
+}
+nav a:hover{
+    color:white;
+}
+.hidden{
+    display:none;
+}
+
+.logo{
+    max-width: fit-content;
+    width:100%;
+    border-style: hidden;
+}
+
+p{
+    font-size: 20px;
+}
+.navside{
+    background-color: #5f0f40;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    height:100%;
+    width:300px;
+    padding-top: 40px
+
+}
+.navside a{
+    padding: 8px 8px 8px 32px;
+    display: block;
+}
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+    font-size: 19px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.picturecarousel{
+    display: none;
+}
+
+.textimage{
+    display:flex;
+    flex-direction: column;
+}
+
+.column{
+    display:flex;
+    flex-direction: column;
+    background-color: #e36414 ;
+    color: #ffffff;
+    border: dashed 4px #f8efdf;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 10px;
+}
+
+picture img{
+    border-radius: 1em;
+    margin: auto;
+    max-width:100%;
+    height:auto;
+}
+
+.vendor{
+    color: #ffffff;
+    border: 4px #e4d1ae;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 10px;
+}
+
+.yellow, .yellow1 {
+    background-color:#fb8b24;
+}
+
+.red, .red1 {
+    background-color:#9a031e ;
+}
+
+.orange{
+    background-color:#eb6f23;
+}
+
+.brown, .brown1 {
+    background-color:#7f5539;
+}
+
+.table{
+    display:flex;
+    flex-direction: column;
+}
+
+a{
+     color: #fff6f2
+}
+
+.link:hover {
+    color: #9a0000;
+    background-color: #ffffff;
+}
+.qicon{
+    display:flex;
+    flex-direction: row;
+}
+.question {
+    font-weight: bold;
+    font-size: 18px;
+    padding:1em 1em 1em 0em;
+    text-decoration: underline;
+    border:none;
+    text-align: left;
+    color: #F7F0F5;
+    margin-left: 0px;
+    cursor:pointer;
+    width:100%;
+}
+.question:hover{
+    color: #5f0f40;
+    background-color: #ffffff;
+}
+.qicon:hover{
+    color: #5f0f40;
+    background-color: #ffffff;
+}
+.pm{
+    margin-right:7px;
+}
+.answer {
+    margin: 1em;
+    padding: 0 0 2px 0;
+    font-size: 16px;
+}
+.white{
+    color:#fff6f2
+}
+.smallcolumn{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+.small{
+    font-size: 18pt;
+    margin-bottom: 1em;
+}
+
+figure img{
+    border:2px solid #b0361b ;
+    margin: auto;
+    max-width:100%;
+    height:auto;
+}
+
+@media (min-width:600px) and (max-width:899px){
+    body{
+        padding: 1em;
+    }
+    .table{
+        display:flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    header h1{
+        width:85%
+    }
+    .logo{
+        margin-right: 2em;
+    }
+
+    nav ul li {
+        font-size: 18px;
+    }
+
+    h1 {
+        display: block;
+        padding: 1em;
+    }
+
+    header h2{
+        font-size: 30px;
+        margin: auto;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    picture{
+        margin: 4px auto;
+    }
+
+    .smallcolumn{
+        display:flex;
+        flex-direction: column;
+    }
+
+
+    h3{
+        font-size:24px;
+    }
+
+    .titleandimage{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .mid{
+        display:flex;
+        flex-direction: column;
+    }
+    .picturecarousel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 900px) {
+    html{
+        background-color: #b0361b;
+        background-image: url("../images/apple-basket-many.jpg");
+    }
+    .table{
+        display:flex;
+        flex-direction: row;
+    }
+    body{
+        max-width: 1200px;
+        min-width: 400px;
+        margin: 0 auto;
+        padding: 2em;
+
+    }
+
+    header h1{
+        width:80%
+    }
+
+    nav ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav li a:hover {
+        color: #5f0f40;
+        background-color: #F7F0F5;
+    }
+
+    nav ul li {
+        font-size: 19px;
+        font-weight: bold;
+        flex-grow: 1;
+    }
+
+    nav ul li a {
+        display: block;
+        border: 3px#5f0f40;
+        border-style: outset;
+        padding: 6px 12px;
+        border-radius: .5em;
+        margin: 2px;
+        background-color: #5f0f40;
+    }
+
+
+    .picturecarousel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .textimage{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .column{
+        flex-grow: 1;
+    }
+
+
+    .smallcolumn{
+        flex-direction: row;
+    }
+
+    .smallcolumn .yellow{
+        flex-grow: 1;
+    }
+
+    .red{
+        width: 25%;
+    }
+
+    .orange{
+        width: 25%;
+    }
+
+    .brown{
+        width: 25%;
+    }
+
+    .yellow{
+        width: 25%;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    h1 {
+        display: block;
+        padding: 1em;
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size:22px;
+    }
+
+    figure img{
+        border-radius: 1em;
+        margin: auto;
+        width: 100%;
+    }
+
+}
